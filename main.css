@@ -5,9 +5,12 @@
     font-family: 'Arial', sans-serif;
 }
 body {
-    background: #EEF1F7;
+    background-image:url("Images/nature.jpg") ;
     color: #2B2D42;
     line-height: 1.6;
+    background-position: center center;
+    background-size: cover;
+    color:black;
 }
 .navBar{
     background-color:#296A8D;
@@ -100,7 +103,6 @@ img{
 }
 
 .img{
-    /* width: 31.5%; */
     box-shadow: 3px 3px 15px 0 rgba(0,0,0,0.1);
     border-radius:15px;
     background-color: white;
@@ -181,6 +183,18 @@ padding:20px 20px;
     padding: 10px 0;
     margin-left: 25px;
 }
+.personal-imgs{
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    border-radius:15px;
+    margin: 35px auto;
+        
+}
+.personal-imgs img{
+    width: 30%;
+    margin: 0 50px;
+}
 
 .flightcontain{
 box-shadow: 3px 3px 15px 0 rgba(0,0,0,0.1);
@@ -189,6 +203,9 @@ background-color: white;
 padding:20px 20px;
 margin: 120px auto 0;
 width: 85%;
+}
+.flightcontain h2{
+    margin-bottom: 10px;
 }
 .flightdata label{
     display:block;
@@ -242,6 +259,13 @@ width: 30%;
     width: 100%;
     color: black;
 }
+.loginbutton:hover{
+    background-color: #7c7b7b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ;
+}
+
 .summary{
     box-shadow: 3px 3px 15px 0 rgba(0,0,0,0.1);
 border-radius:15px;
@@ -283,11 +307,18 @@ width: 85%;
     background-color: #A9A9A9;
     border-radius: 30px;
     color: black;   
-}.mapcontain{
+}
+.summarybutton button:hover{
+    background-color: #7c7b7b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ;
+}
+.mapcontain{
     margin: 25px;
     text-align: center;
 }
-  iframe {
+iframe {
     width: 75%;
     height: 75%;  
 } 
